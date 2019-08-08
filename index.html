@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ELearnerForSDGs</title>
+    <link rel="stylesheet" href="component/E-Learner-For-SDGs/main.css">
+    <link rel="stylesheet" href="component/fontawesome-free-5.9.0-web/css/all.min.css">
+</head>
+<body>
+    <div id="loader">
+        <div id="loadComment">
+            <span id="loadAnimation"></span>
+        </div>
+    </div>
+    <div id="header">
+    
+    </div>
+    <div id="content">
+        <div id="title">
+            <i class="fas fa-language" style="font-size:128pt;"></i><br>
+            <button id="startStudy">
+                <i class="fas fa-chalkboard"></i><div style="font-size:14pt;">Study</div>
+            </button>
+            <button id="startTest">
+                <i class="fas fa-check"></i><div style="font-size:14pt;">Test</div>
+            </button>
+        </div>
+    </div>
+    <div id="speakStates">
+        <i class="fas fa-volume-mute"></i>
+    </div>
+    <div id="speakPanel">
+        <input type="text" id="speakText" placeholder="Type text to speech...">
+    </div>
+    <div id="studyTest">
+        <img id="wordImage"><br>
+        <input type="text" id="studyTestWord"><br>
+        <button id="nextButton"><i class="fas fa-arrow-right"></i></button>
+    </div>
+<script src="component/E-Learner-For-SDGs/textList.js"></script>
+<script src="component/E-Learner-For-SDGs/main.js"></script>
+<script src="component/meSpeak/mespeak.js"></script>
+</body>
+</html>

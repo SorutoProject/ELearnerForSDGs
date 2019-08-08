@@ -1,0 +1,163 @@
+body{
+    background:#3c3c3c;
+    color:#fff;
+}
+#loader{
+    position: absolute;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.5);
+    width:100%;
+    height:100%;
+    text-align: center;
+    opacity: 1;
+    pointer-events: none;
+    transition-duration: 0.3s;
+    -ms-user-select: none; /* IE 10+ */
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   user-select: none;
+}
+#loader.hide{
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+#loadComment{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width:100%;
+    height:60px;
+    margin: auto;
+    color:#fff;
+}
+
+#loadAnimation{
+    display: inline-block;
+    animation-name:loading;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    background:#fff;
+    height:5px;
+    border-radius: 3px;
+}
+
+#content #title{
+    text-align: center;
+    text-shadow:0 0 10px rgba(255,255,255,0.5);
+}
+
+#content #title button{
+    font-size:30%;
+    background:#1c1c1c;
+    border:1px solid #4c4c4c;
+    border-radius:3px;
+    border-top-left-radius: 20px;
+    color:#fff;
+    width:40%;
+    font-size:60pt;
+    text-align: center;
+}
+
+#content #title button:hover{
+    background:#4c4c4c;
+}
+
+#speakStates{
+    position: fixed;
+    bottom:10px;
+    right:10px;
+    width:1em;
+    height:1em;
+    font-size:1.5em;
+    text-align: center;
+    background:rgba(0, 0, 0, 0.51);
+    padding:10px;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+#speakPanel{
+    position: fixed;
+    left:0px;
+    bottom:0px;
+    background:rgba(0,0,0,0.4);
+    width:100%;
+    height:60px;
+    transition-duration: 0.1s;
+    z-index: 2;
+}
+
+#speakPanel.hide{
+    bottom:-60px;
+}
+
+#speakText{
+    position: absolute;
+    top:5px;
+    left:0px;
+    width:calc(100% - 90px);
+    height:40px;
+    font-size:12pt;
+    background:none;
+    border:none;
+    color:#fff;
+    border-bottom:1px solid #fff;
+}
+
+#studyTest{
+    position: absolute;
+    top:0;
+    left:0;
+    background:#2c2c2c;
+    color:#fff;
+    width:100%;
+    height:100%;
+    text-align: center;
+    display: none;
+}
+
+#wordImage{
+    height:300px;
+    border:1px solid #222;
+}
+
+#studyTestWord{
+    width:90%;
+    border:none;
+    border-bottom:1px solid #ddd;
+    height:35px;
+    font-size:28pt;
+    background:none;
+    text-align: center;
+    color:#fff;
+}
+
+#nextButton{
+    color:#fff;
+    background:#1c1c1c;
+    border:1px solid #5c5c5c;
+    width:130px;
+    height:60px;
+    font-size:20pt;
+}
+#nextButton:disabled{
+    background:#6c6c6c;
+    color:#aaa;
+}
+
+
+@keyframes loading{
+    0%{
+        width:0;
+    }
+    50%{
+        width:100px;
+    }
+    100%{
+        width:0;
+    }
+}
